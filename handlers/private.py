@@ -19,7 +19,7 @@ async def start(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 Asistan", url="https://t.me/GoldMusicAsistan"
+                        "🔊 Asistan", url="https://t.me/GoldMusicAsistant"
                     ),
                     InlineKeyboardButton(
                         "Qrup", url="https://t.me/GOLD_fed_team"
@@ -136,7 +136,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 Asistan", url="https://t.me/GoldMusicAsistan"
+                        "🔊 Asistan", url="https://t.me/GoldMusicAsistant"
                     ),
                     InlineKeyboardButton(
                         "Qrup", url="https://t.me/GOLD_fed_team"
