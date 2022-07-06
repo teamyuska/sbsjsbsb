@@ -14,12 +14,12 @@ async def start(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/GOLD_Muzik_Bot?startgroup=true"
+                        "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/GoldMusicRobot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 Asistan", url="https://t.me/GOLD_Music_Asistant"
+                        "🔊 Asistan", url="https://t.me/GoldMusicAsistan"
                     ),
                     InlineKeyboardButton(
                         "Qrup", url="https://t.me/GOLD_fed_team"
@@ -131,12 +131,12 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/GOLD_Muzik_Bot?startgroup=true"
+                        "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/GoldMusicRobot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 Asistan", url="https://t.me/GOLD_Music_Asistant"
+                        "🔊 Asistan", url="https://t.me/GoldMusicAsistan"
                     ),
                     InlineKeyboardButton(
                         "Qrup", url="https://t.me/GOLD_fed_team"
