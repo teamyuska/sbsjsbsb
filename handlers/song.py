@@ -18,7 +18,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(":"))))
 
 
-@Client.on_message(command(["bul"]))
+@Client.on_message(command(["song"]))
 def bul(client, message):
 
     user_id = message.from_user.id
@@ -55,7 +55,7 @@ def bul(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"☑️ **Mahnı adı**: [{title[:35]}]({link})\n🎬 **Mənbə**: YouTube\n⏱️ **Müddət**: `{duration}`\n👁‍🗨 **Baxış sayı**: `{views}`\n📤 **Tərəfindən**: @{BOT_USERNAME}"
+        rep = f"☑️ **Mahnı adı**: [{title[:35]}]({link})\n🎬 **Mənbə**: YouTube\n⏱️ **Müddət**: `{duration}`\n👁‍🗨 **Baxış sayı**: `{views}`\n📤 **Müsic Kanalı**: @UIviMusic"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(dur_arr[i]) * secmul
@@ -70,7 +70,7 @@ def bul(client, message):
         )
         m.delete()
     except Exception as e:
-        m.edit("❌ Error")
+        m.edit("❌ Xəta)
         print(e)
 
     try:
@@ -80,7 +80,7 @@ def bul(client, message):
         print(e)
 
 @Client.on_message(
-    command(["vbul", "vsong"]) & ~filters.edited
+    command(["vplay", "vplay"]) & ~filters.edited
 )
 async def vsong(client, message):
     ydl_opts = {
