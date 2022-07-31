@@ -90,7 +90,7 @@ async def cbbilgi(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("herkes"))
 async def herkes(_, query: CallbackQuery):
-    await query.edit_message_text(f"""<b>Salam {query.from_user.mention}!\nBu botun hərkəs üçün əmr menyusu 😉\n\n ▶️ /play - Musiqi oxutmaq üçün youtube url'sinə vəya musiqi dosyasına yanıt verin\n ▶️ /play <song name> - İstədiyiniz musiqi oxut\n 🔴 \n 🎵 /song <song name> - İstədiyiniz musiqi sürətli bir şəkildə axtarın\n 🎵 /vplay - İstədiyiniz videoları sürətli bir şəkildə axtarın\n 🔍 /video <query> - Youtube'da olan videoları axtarın\n\n</b>""",
+    await query.edit_message_text(f"""<b>\nBu botun hərkəs üçün əmr menyusu . » /vplay =>  İstədiyiniz Videoları Sürətli Bir Şəkildə Axtarın. \n» /song => İstədiyiniz Musiqi Sürətli Bir Şəkildə Axtarın. \n» /play => Musiqi Oxutmaq Üçün Youtube Url'sinə Və Ya Musiqi Dosyasına Yanıt Verin. """,
     reply_markup=InlineKeyboardMarkup(
              [
                  [
