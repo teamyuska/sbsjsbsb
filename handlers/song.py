@@ -70,7 +70,7 @@ def bul(client, message):
         )
         m.delete()
     except Exception as e:
-        m.edit("❌ Xəta)"
+        m.edit("❌ Xəta")
         print(e)
 
     try:
