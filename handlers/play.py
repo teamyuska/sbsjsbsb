@@ -161,7 +161,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="✨ Bağla",
+                        text="✨ ʙᴀɢʟᴀ",
                         callback_data="cls")
                    
                 ]
