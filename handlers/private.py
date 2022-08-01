@@ -14,7 +14,7 @@ async def start(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/Ulvi_Music_Bot?startgroup=true"
+                        "➕ ❰ ᴍᴇɴɪ ǫʀᴜᴘᴀ ᴇʟᴀᴠᴇ ᴇᴛ ❱ ➕", url=f"https://t.me/Ulvi_Music_Bot?startgroup=true"
                     )
                 ],
                 [
@@ -27,7 +27,7 @@ async def start(_, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧩 Əmrlər" , callback_data= "cbbilgi"
+                        "🧩 ᴇᴍʀʟᴇʀ" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
                         "📚 ᴋᴀɴᴀʟ", url=f"https://t.me/UlviProject"
@@ -47,13 +47,13 @@ async def bilgi(_, message: Message):
              [
                  [
                      InlineKeyboardButton(
-                         "🔴 İstifatəçi Əmrləri", callback_data="herkes")
+                         "🔴 ɪsᴛɪғᴀᴅᴇᴄɪ ᴇᴍʀʟᴇʀɪ", callback_data="herkes")
                  ],[                     
                      InlineKeyboardButton(
-                         "⚫ Admin  Əmrləri", callback_data="admin")
+                         "⚫ ᴀᴅᴍɪɴ ʀᴍʀʟᴇʀɪ", callback_data="admin")
                  ],[
                      InlineKeyboardButton(
-                         "Geri 🔄", callback_data="cbstart")
+                         "ɢᴇʀɪ 🔄", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
                          "ᴏᴡɴᴇʀ🇦🇿", url="https://t.me/Brend_Ulvi")
@@ -70,15 +70,15 @@ async def cbbilgi(_, query: CallbackQuery):
       [
         [
           InlineKeyboardButton(
-            "✨ Hərkəs üçün əmrlər", callback_data ="herkes")
+            "✨ ʜᴇʀ ᴋᴇs ᴜᴄᴜɴ ᴇᴍʀʟᴇʀ", callback_data ="herkes")
         ],
         [
           InlineKeyboardButton(
-            "👑 Admin əmrləri",callback_data ="admin")
+            "👑 ᴀᴅᴍᴊɴ ᴇᴍʀʟᴇʀɪ",callback_data ="admin")
         ],
         [
           InlineKeyboardButton(
-            "🔄 Geri", callback_data="cbstart")
+            "🔄 ɢᴇʀɪ", callback_data="cbstart")
         ],
         [
           InlineKeyboardButton(
@@ -99,7 +99,7 @@ async def herkes(_, query: CallbackQuery):
                  ],
                  [
                      InlineKeyboardButton(
-                         "️🔄 Geri", callback_data="cbbilgi")
+                         "🔄 ɢᴇʀɪ", callback_data="cbbilgi")
                  ] 
              ]
          )
@@ -117,7 +117,7 @@ async def admin(_, query: CallbackQuery):
                  ],
                  [
                      InlineKeyboardButton(
-                         "️🔄 Geri", callback_data="cbbilgi")
+                         "️🔄 ɢᴇʀɪ", callback_data="cbbilgi")
                  ] 
              ]
          )
@@ -131,7 +131,7 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ Məni Qrupa Əlavə Et ❱ ➕", url=f"https://t.me/Ulvi_Music_Bot?startgroup=true"
+                        "➕ ❰ ᴍᴇɴɪ ǫʀᴜᴘᴀ ᴇʟᴀᴠᴇ ᴇʀ ❱ ➕", url=f"https://t.me/Ulvi_Music_Bot?startgroup=true"
                     )
                 ],
                 [
@@ -144,7 +144,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧩 Əmrlər" , callback_data= "cbbilgi"
+                        "🧩 ᴇᴍʀʟᴇʀ" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
                         "📚 ᴋᴀɴᴀʟ", url=f"https://t.me/UlviProject"
