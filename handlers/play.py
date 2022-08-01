@@ -138,7 +138,7 @@ async def play(_, message: Message):
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>Salam {user.first_name}, Faydalı userbot bu söhbətdə deyil admindən göndərməyi xahiş edin /play ilk dəfə əlavə etmək üçün əmri.</i>")
+            f"<i>Salam {user.first_name}, Asistan Söhbədə Yoxdur🙄, /asistan əlavə etmək üçün əmr.</i>")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
@@ -198,10 +198,10 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("🚀 Support", url=f"https://t.me/UlviSup"),
-                InlineKeyboardButton("📚 Kanal", url=f"https://t.me/UlviProject"),
+                InlineKeyboardButton("🚀 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/UlviSup"),
+                InlineKeyboardButton("📚 ᴋᴀɴᴀʟ", url=f"https://t.me/UlviProject"),
             ],[
-                InlineKeyboardButton("📲 Bağla", callback_data="cls"),
+                InlineKeyboardButton("📲 ʙᴀɢʟᴀ", callback_data="cls"),
             ],
         ]
     )
@@ -263,10 +263,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("🚀 Support", url=f"https://t.me/UlviSup"),
-                InlineKeyboardButton("📚 Kanal", url=f"https://t.me/UlviProject"),
+                InlineKeyboardButton("🚀 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/UlviSup"),
+                InlineKeyboardButton("📚 ᴋᴀɴᴀʟ", url=f"https://t.me/UlviProject"),
             ],[
-                InlineKeyboardButton("📲 Bağla", callback_data="cls"),
+                InlineKeyboardButton("📲 ʙᴀɢʟᴀ", callback_data="cls"),
             ],
         ]
     )
