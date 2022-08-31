@@ -9,17 +9,17 @@ from helpers.filters import command, other_filters2
 async def start(_, message: Message):
                 await message.reply_photo(
                 "https://telegra.ph/file/439f7f9b86bffb4be44c6.jpg",
-                caption=(f"""**Salam {message.from_user.mention} 🎵\nMən {bot}!\nSəsli söhbətlərdə musiqi oxuyan botam. Ban yetkisiz, Səs yetkisi verib, Asistanı qrupa əlavə edin.\n\nᴏᴡɴᴇʀ🇦🇿  [ᴜ̈ʟᴠɪ ʜᴜ̈sᴇʏɴᴏᴠ](https://t.me/Brend_Ulvi)**"""),
+                caption=(f"""**Salam {message.from_user.mention} 🎵\nMən {bot}!\nSəsli söhbətlərdə musiqi oxuyan botam. Ban yetkisiz, Səs yetkisi verib, Asistanı qrupa əlavə edin.\n\nᴏᴡɴᴇʀ🇦🇿  [ᴄʀᴇᴀᴛᴏʀ](https://t.me/BrendUIvi)**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ ᴍᴇɴɪ ǫʀᴜᴘᴀ ᴇʟᴀᴠᴇ ᴇᴛ ❱ ➕", url=f"https://t.me/Ulvi_Music_Bot?startgroup=true"
+                        "➕ ❰ ᴍᴇɴɪ ǫʀᴜᴘᴀ ᴇʟᴀᴠᴇ ᴇᴛ ❱ ➕", url=f"https://t.me/RuyaMusicBot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 ᴀsɪsᴛᴀɴ", url="https://t.me/UlviMusicAsistant"
+                        "🔊 ᴀsɪsᴛᴀɴ", url="https://t.me/RuyaMusicAsistant"
                     ),
                     InlineKeyboardButton(
                         "📚  sᴜᴘᴘᴏʀᴛ", url="https://t.me/UlviSup"
@@ -56,7 +56,7 @@ async def bilgi(_, message: Message):
                          "ɢᴇʀɪ 🔄", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "ᴏᴡɴᴇʀ🇦🇿", url="https://t.me/Brend_Ulvi")
+                         "ᴄʀᴇᴀᴛᴏʀ🇦🇿", url="https://t.me/BrendUIvi")
                  ]
              ]
          )
@@ -82,7 +82,7 @@ async def cbbilgi(_, query: CallbackQuery):
         ],
         [
           InlineKeyboardButton(
-            "ᴏᴡɴᴇʀ🇦🇿", url="https://t.me/Brend_Ulvi")
+            "ᴄʀᴇᴀᴛᴏʀ🇦🇿", url="https://t.me/BrendUIvi")
         ]
       ]
      ))
@@ -96,7 +96,7 @@ async def herkes(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "ᴏᴡɴᴇʀ🇦🇿", url="https://t.me/Brend_Ulvi")
+                         "ᴄʀᴇᴀᴛᴏʀ🇦🇿", url="https://t.me/BrendUIvi")
                  ],
                  [
                      InlineKeyboardButton(
@@ -114,7 +114,7 @@ async def admin(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "ᴏᴡɴᴇʀ🇦🇿", url="https://t.me/Brend_Ulvi")
+                         "ᴄʀᴇᴀᴛᴏʀ🇦🇿", url="https://t.me/BrendUIvi")
                  ],
                  [
                      InlineKeyboardButton(
@@ -127,17 +127,17 @@ async def admin(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""**Salam {query.from_user.mention} 🎵\nMən {bot}!\nSəsli sohbətlərdə musiqi oxuyan botam. Ban yetkisiz, Səs yönətim yetki verib, Asistanı qrupa əlavə edin.\n\nᴏᴡɴᴇʀ🇦🇿  [ᴜ̈ʟᴠɪ ʜᴜ̈sᴇʏɴᴏᴠ](https://t.me/Brend_Ulvi)**""",
+    await query.edit_message_text(f"""**Salam {query.from_user.mention} 🎵\nMən {bot}!\nSəsli sohbətlərdə musiqi oxuyan botam. Ban yetkisiz, Səs yönətim yetki verib, Asistanı qrupa əlavə edin.\n\nᴏᴡɴᴇʀ🇦🇿  [ᴄʀᴇᴀᴛᴏʀ](https://t.me/BrendUIvi)**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ ᴍᴇɴɪ ǫʀᴜᴘᴀ ᴇʟᴀᴠᴇ ᴇʀ ❱ ➕", url=f"https://t.me/Ulvi_Music_Bot?startgroup=true"
+                        "➕ ❰ ᴍᴇɴɪ ǫʀᴜᴘᴀ ᴇʟᴀᴠᴇ ᴇʀ ❱ ➕", url=f"https://t.me/RuyaMusicBot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 ᴀsɪsᴛᴀɴ", url="https://t.me/UlviMusicAsistant"
+                        "🔊 ᴀsɪsᴛᴀɴ", url="https://t.me/RuyaMusicAsistant"
                     ),
                     InlineKeyboardButton(
                         "📚 sᴜᴘᴘᴏʀᴛ", url="https://t.me/UlviSup"
