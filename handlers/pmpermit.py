@@ -26,17 +26,17 @@ async def pmPermit(client: USER, message: Message):
 
 @Client.on_message(filters.command(["/pmpermit"]))
 async def bye(client: Client, message: Message):
-    if message.from_user.id in SUDO_USERS:
+    if message.from_user.id in SokUDO_USERS:
         global PMSET
         text = message.text.split(" ", 1)
         queryy = text[1]
         if queryy == "on":
             PMSET = True
-            await message.reply_text("PM İzin Etkin")
+            await message.reply_text("PM İcazə aktivdir")
             return
         if queryy == "off":
             PMSET = None
-            await message.reply_text("PM İzin Devre Dışı")
+            await message.reply_text("PM İcazə deaktiv edilib")
             return
 
 @USER.on_message(filters.text & filters.private & filters.me)        
@@ -44,7 +44,7 @@ async def autopmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("**Hey Userbot Yazışması artık başarılı.**")
+        await message.reply_text("**Userbot yazışmaları indi uğurludur.**")
         return
     message.continue_propagation()    
     
@@ -53,7 +53,7 @@ async def pmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("Yaklaşık olarak PM")
+        await message.reply_text("Təxminən PM")
         return
     message.continue_propagation()    
     
@@ -63,6 +63,6 @@ async def rmpmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if chat_id in pchats:
         pchats.remove(chat_id)
-        await message.reply_text("Bu şekilde PM")
+        await message.reply_text("Bu şəkildə PM")
         return
     message.continue_propagation()
