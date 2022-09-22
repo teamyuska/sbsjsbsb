@@ -14,12 +14,12 @@ async def start(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ ᴍᴇɴɪ ǫʀᴜᴘᴀ ᴇʟᴀᴠᴇ ᴇᴛ ❱ ➕", url=f"https://t.me/RuyaMusicBot?startgroup=true"
+                        "➕ ❰ ᴍᴇɴɪ ǫʀᴜᴘᴀ ᴇʟᴀᴠᴇ ᴇᴛ ❱ ➕", url=f"https://t.me/Gecemusiqi_bot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 ᴀsɪsᴛᴀɴ", url="https://t.me/RuyaMusicAsistant"
+                        "🔊 ᴀsɪsᴛᴀɴ", url="https://t.me/GeceMavisiAsistant"
                     ),
                     InlineKeyboardButton(
                         "📚  sᴜᴘᴘᴏʀᴛ", url="https://t.me/UlviSup"
@@ -132,12 +132,12 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ ᴍᴇɴɪ ǫʀᴜᴘᴀ ᴇʟᴀᴠᴇ ᴇʀ ❱ ➕", url=f"https://t.me/RuyaMusicBot?startgroup=true"
+                        "➕ ❰ ᴍᴇɴɪ ǫʀᴜᴘᴀ ᴇʟᴀᴠᴇ ᴇʀ ❱ ➕", url=f"https://t.me/Gecemusiqi_bot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 ᴀsɪsᴛᴀɴ", url="https://t.me/RuyaMusicAsistant"
+                        "🔊 ᴀsɪsᴛᴀɴ", url="https://t.me/GeceMavisiAsistant"
                     ),
                     InlineKeyboardButton(
                         "📚 sᴜᴘᴘᴏʀᴛ", url="https://t.me/UlviSup"
