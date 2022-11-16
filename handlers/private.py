@@ -9,28 +9,29 @@ from helpers.filters import command, other_filters2
 async def start(_, message: Message):
                 await message.reply_photo(
                 "https://telegra.ph/file/7016b36478a0b3680a0cc.jpg",
-                caption=(f"""**Salam {message.from_user.mention} 🎵\nMən {bot}!\nSəsli söhbətlərdə musiqi oxuyan botam. Ban yetkisiz, Səs yetkisi verib, Asistanı qrupa əlavə edin.\n\nᴄʀᴇᴀᴛᴏʀ🇦🇿  [ᴜ̈ʟᴠɪ ʜᴜ̈sᴇʏɴᴏᴠ](https://t.me/BrendUIvi)**"""),
+                caption=(f"""**👋Salam Mən Səsli Söhbətlərdə Musiqi Oxuyan Botam**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ ᴍᴇɴɪ ǫʀᴜᴘᴀ ᴇʟᴀᴠᴇ ᴇᴛ ❱ ➕", url=f"https://t.me/Gecemusiqi_bot?startgroup=true"
+                        "➕Məni Qrupa Əlavə Et➕", url=f"https://t.me/Gecemusiqi_bot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 ᴀsɪsᴛᴀɴ", url="https://t.me/GeceMavisiAsistant"
+                        "🔊Asistant", url="https://t.me/GeceMavisiAsistant"
                     ),
                     InlineKeyboardButton(
-                        "📚  sᴜᴘᴘᴏʀᴛ", url="https://t.me/UlviSup"
+                        "🆘Support", url="https://t.me/UlviSup"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧩 ᴇᴍʀʟᴇʀ" , callback_data= "cbbilgi"
+                        "⚡Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "📚 ᴋᴀɴᴀʟ", url=f"https://t.me/UlviProject"
+                        "⭐Kanal", url=f"https://t.me/newsohbet
+"
                     )
                 ]
                 
@@ -42,21 +43,21 @@ async def start(_, message: Message):
 
 @Client.on_message(command(["bilgi", f"bilgi@{BOT_USERNAME}"]))
 async def bilgi(_, message: Message):
-      await message.reply_text(" ❗ Qeyd:\n Botun aktiv işləməsi üçün bu üç yetki vermək lazımdır ⬇️:\n- Mesaj silmə yetkisi,\n- Bağlantı ilə dəvət etmə yetkisi,\n- Səsli səhbəti yönətmə yetkisi.", 
+      await message.reply_text(" ❗ Qeyd:\n Botun aktiv işləməsi üçün bu üç yetkini vermək lazımdır ⬇️:\n- Mesaj silmə yetkisi,\n- Bağlantı ilə dəvət etmə yetkisi,\n- Səsli səhbəti yönətmə yetkisi.", 
       reply_markup=InlineKeyboardMarkup(
              [
                  [
                      InlineKeyboardButton(
-                         "🔴 ɪsᴛɪғᴀᴅᴇᴄɪ ᴇᴍʀʟᴇʀɪ", callback_data="herkes")
+                         "⚡Bütün Əmrlər", callback_data="herkes")
                  ],[                     
                      InlineKeyboardButton(
-                         "⚫ ᴀᴅᴍɪɴ ʀᴍʀʟᴇʀɪ", callback_data="admin")
+                         "🆘Admin Əmrləri", callback_data="admin")
                  ],[
                      InlineKeyboardButton(
-                         "ɢᴇʀɪ 🔄", callback_data="cbstart")
+                         "🔙Geri", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "ᴄʀᴇᴀᴛᴏʀ🇦🇿", url="https://t.me/BrendUIvi")
+                         "🇦🇿Sahibim", url="https://t.me/g8zl8adam")
                  ]
              ]
          )
@@ -65,26 +66,23 @@ async def bilgi(_, message: Message):
 
 @Client.on_callback_query(filters.regex("cbbilgi"))
 async def cbbilgi(_, query: CallbackQuery):
-    await query.edit_message_text(" ❗ Qeyd:\nBotun aktiv işləməsi üçün bu üç yetki vermək lazımdır ⬇️\n- Mesaj silmə yetkisi.\n- Bağlantı ilə dəvət etmə yetkisi.\n- Səsli söhbəti yönətmə yetkisi.", 
+    await query.edit_message_text(" ❗ Qeyd:\nBotun Aktiv İşləməsi Üçün Bu Üç Yetkini Vermək Lazımdır ⬇️\n- Mesaj Silmə Yetkisi.\n- Bağlantı İlə Dəvət Etmə Yetkisi.\n- Səsli Söhbəti Yönətmə Yetkisi.", 
     reply_markup=InlineKeyboardMarkup(
-      [
-        [
-          InlineKeyboardButton(
-            "✨ ʜᴇʀ ᴋᴇs ᴜᴄᴜɴ ᴇᴍʀʟᴇʀ", callback_data ="herkes")
-        ],
-        [
-          InlineKeyboardButton(
-            "👑 ᴀᴅᴍɪɴ ᴇᴍʀʟᴇʀɪ",callback_data ="admin")
-        ],
-        [
-          InlineKeyboardButton(
-            "🔄 ɢᴇʀɪ", callback_data="cbstart")
-        ],
-        [
-          InlineKeyboardButton(
-            "ᴄʀᴇᴀᴛᴏʀ🇦🇿", url="https://t.me/BrendUIvi")
-        ]
-      ]
+           [
+               [
+                     InlineKeyboardButton(
+                         "⚡Bütün Əmrlər", callback_data="herkes")
+                 ],[                     
+                     InlineKeyboardButton(
+                         "🆘Admin Əmrləri", callback_data="admin")
+                 ],[
+                     InlineKeyboardButton(
+                         "🔙Geri", callback_data="cbstart")
+                 ],[
+                     InlineKeyboardButton(
+                         "🇦🇿Sahibim", url="https://t.me/g8zl8adam")
+                 ]
+             ]
      ))
 
 
@@ -96,11 +94,11 @@ async def herkes(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "ᴄʀᴇᴀᴛᴏʀ🇦🇿", url="https://t.me/BrendUIvi")
+                         "🇦🇿Sahibim", url="https://t.me/BrendUIvi")
                  ],
                  [
                      InlineKeyboardButton(
-                         "🔄 ɢᴇʀɪ", callback_data="cbbilgi")
+                         "🔙Geri", callback_data="cbbilgi")
                  ] 
              ]
          )
