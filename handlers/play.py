@@ -263,8 +263,8 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("🆘Support", url=f"https://t.me/UlviSup"),
-                InlineKeyboardButton("✅Digər Botlar", url=f"https://t.me/UlviProject"),
+                InlineKeyboardButton("🆘Support", url=f"https://t.me/YuskaSup"),
+                InlineKeyboardButton("✅Digər Botlar", url=f"https://t.me/YuskaProject"),
             ],[
                 InlineKeyboardButton("🗑️Bağla", callback_data="cls"),
             ],
@@ -272,7 +272,7 @@ async def play(_, message: Message):
     )
         
         if (dur / 60) > DURATION_LIMIT:
-             await lel.edit(f"❌ Uzun videolar {DURATION_LIMIT}  dəqiqəlik icazə verilmir!")
+             await lel.edit(f"❌Musiqi Çox Uzundur {DURATION_LIMIT} dəqiqəlik icazə verilir!")
              return
         requested_by = message.from_user.first_name
         await generate_cover(requested_by, title, views, duration, thumbnail)  
