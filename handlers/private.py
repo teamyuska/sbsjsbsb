@@ -30,7 +30,7 @@ async def start(_, message: Message):
                         "⚡Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "⭐Kanal", url=f"https://t.me/newsohbet"
+                        "⭐Kanal", url=f"https://t.me/YuskaProject"
 "
                     )
                 ]
@@ -130,23 +130,23 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ❰ ᴍᴇɴɪ ǫʀᴜᴘᴀ ᴇʟᴀᴠᴇ ᴇʀ ❱ ➕", url=f"https://t.me/Gecemusiqi_bot?startgroup=true"
+                        "➕Məni Qrupa Əlavə Et➕", url=f"https://t.me/soamusicbot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 ᴀsɪsᴛᴀɴ", url="https://t.me/GeceMavisiAsistant"
+                        "🔊Asistant", url="https://t.me/SoaAsistant"
                     ),
                     InlineKeyboardButton(
-                        "📚 sᴜᴘᴘᴏʀᴛ", url="https://t.me/UlviSup"
+                        "🆘Support", url="https://t.me/YuskaSup"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧩 ᴇᴍʀʟᴇʀ" , callback_data= "cbbilgi"
+                        "⚡Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "📚 ᴋᴀɴᴀʟ", url=f"https://t.me/UlviProject"
+                        "⭐Kanal", url=f"https://t.me/YuskaProject"
                     )
                 ]
                 
