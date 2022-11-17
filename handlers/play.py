@@ -101,7 +101,7 @@ async def cls(_, query: CallbackQuery):
                    & ~filters.via_bot)
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄**Zəhmət olmasa gözləyin...**")
+    lel = await message.reply("🔄**Zəhmət Olmasa Gözləyin...**")
     
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -121,7 +121,7 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>Əvvəlcə məni admin edin!</b>")
+                        "<b>Əvvəlcə Məni Admin Edin!</b>")
                     return
 
                 try:
@@ -133,7 +133,7 @@ async def play(_, message: Message):
                     pass
                 except Exception:
                     await lel.edit(
-                        f"<b>🔵 Taşan Gözləmə xətası 🔵</b> \n\Salam {user.first_name}, Faydalı userbot çoxlu qoşulma sorğularına görə qrupunuza qoşula bilmədi. Userbot-un qrupda qadağan edilmədiyinə əmin olun və sonra yenidən cəhd edin!")
+                        f"<b>🔵Taşan Gözləmə Xətası</b> \n\Salam {user.first_name}, Faydalı Userbot Çoxlu Qoşulma Sorğularına Görə Qrupunuza Qoşula Bilmədi. Userbot-un Qrupda Qadağan Edilmədiyinə Əmin Olun Və Sonra Yenidən Cəhd Edin!")
     try:
         await USER.get_chat(chid)
     except:
