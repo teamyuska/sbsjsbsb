@@ -31,7 +31,6 @@ async def start(_, message: Message):
                     ),
                     InlineKeyboardButton(
                         "⭐Kanal", url=f"https://t.me/YuskaProject"
-"
                     )
                 ]
                 
