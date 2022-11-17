@@ -4,7 +4,7 @@ from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserAlreadyParticipant
 from helpers.decorators import errors, authorized_users_only
 
-@Client.on_message(filters.group & filters.command(["Qoşul", "asistan"]))
+@Client.on_message(filters.group & filters.command(["asistan"]))
 @authorized_users_only
 @errors
 async def addchannel(client, message):
@@ -24,22 +24,11 @@ async def addchannel(client, message):
 
     try:
         await USER.join_chat(invitelink)
-        await USER.send_message(message.chat.id,"Senin İsteğin Üzerine Geldim")
     except UserAlreadyParticipant:
-        await message.reply_text(
-            "<b>Asistan onsuzda qrupda var🙄</b>",
-        )
         pass
     except Exception as e:
         print(e)
-        await message.reply_text(
-            f"<b>🔵 Zaman Aşımı Hatası 🔵\n User {user.first_name} userbot için yoğun katılma istekleri nedeniyle grubunuza katılamadı! Asistanın grupta yasaklanmadığından emin olun."
-            "\n\n Yada Asistan Hesabını Qrupa özün əlavə et </b>",
-        )
         return
-    await message.reply_text(
-            "<b>Asistan onsuzda qrupda var🙄</b>",
-        )
     
 @USER.on_message(filters.group & filters.command(["ayril", "asistanby"]))
 async def rem(USER, message):
