@@ -198,10 +198,10 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("🚀 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/UlviSup"),
-                InlineKeyboardButton("📚 ᴋᴀɴᴀʟ", url=f"https://t.me/UlviProject"),
+                InlineKeyboardButton("🆘Support", url=f"https://t.me/YuskaSup"),
+                InlineKeyboardButton("✅Digər Botlar", url=f"https://t.me/YuskaProject"),
             ],[
-                InlineKeyboardButton("📲 ʙᴀɢʟᴀ", callback_data="cls"),
+                InlineKeyboardButton("🗑️Bağla", callback_data="cls"),
             ],
         ]
     )
@@ -214,7 +214,7 @@ async def play(_, message: Message):
                     [
                         [
                             InlineKeyboardButton(
-                                text="İzləmək üçün 🎬",
+                                text="🎬İzləmək Üçün",
                                 url=f"https://youtube.com")
 
                         ]
@@ -228,11 +228,11 @@ async def play(_, message: Message):
         file_path = await converter.convert(youtube.download(url))
     else:
         if len(message.command) < 2:
-            return await lel.edit("🤔 **Dinləmək istədiyin mahnı nədir?**")
-        await lel.edit("🔎 **Zəhmət olmasa Gözləyin...**")
+            return await lel.edit("🤔**Dinləmək İstədiyin Mahnı Nədir?**")
+        await lel.edit("🔎**Zəhmət Olmasa Gözləyin...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🔄 **Səsə daxil olunur...🔥**")
+        await lel.edit("⚡**Səsli Söhbətə Qoşuluram...**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -255,7 +255,7 @@ async def play(_, message: Message):
                 
         except Exception as e:
             await lel.edit(
-                "❌ Mahnı tapılmadı\n\nBaşqa mahnı yoxlayın və ya mahnı adı düzgün deyil"
+                "❌Mahnı Tapılmadı\n\nVə Ya Mahnı Adı Düzgün Deyil"
             )
             print(str(e))
             return
@@ -263,10 +263,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("🚀 sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/UlviSup"),
-                InlineKeyboardButton("📚 ᴋᴀɴᴀʟ", url=f"https://t.me/UlviProject"),
+                InlineKeyboardButton("🆘Support", url=f"https://t.me/UlviSup"),
+                InlineKeyboardButton("✅Digər Botlar", url=f"https://t.me/UlviProject"),
             ],[
-                InlineKeyboardButton("📲 ʙᴀɢʟᴀ", callback_data="cls"),
+                InlineKeyboardButton("🗑️Bağla", callback_data="cls"),
             ],
         ]
     )
@@ -286,7 +286,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png",
-        caption="**🎵 Mahnı Adı:** {}\n**🕒 Müddət:** {} min\n**👉 İstəyən:** {}\n\n**🚧 Hissə yeri:** {}".format(
+        caption="**🎵Musiqi Adı:** {}\n**🕒Müddət:** {} min\n**👥İstəyən:** {}\n\n**🎶Hissə yeri:** {}".format(
         title, duration, message.from_user.mention(), position
         ),
         reply_markup=keyboard)
@@ -306,7 +306,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="**🎵 Mahnı Adı:** {}\n**🕒 Müddət:** {} min\n**👉 İstəyən:** {}\n\n**☑️İndi hal-hazırda `{}`...**".format(
+        caption="**🎵Musiqi Adı:** {}\n**🕒Müddət:** {} min\n**👥İstəyən:** {}**".format(
         title, duration, message.from_user.mention(), message.chat.title
         ), )
         os.remove("final.png")
