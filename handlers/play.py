@@ -133,7 +133,7 @@ async def play(_, message: Message):
                     pass
                 except Exception:
                     await lel.edit(
-                        f"<b>🔵Taşan Gözləmə Xətası</b> \n\Salam {user.first_name}, Faydalı Userbot Çoxlu Qoşulma Sorğularına Görə Qrupunuza Qoşula Bilmədi. Userbot-un Qrupda Qadağan Edilmədiyinə Əmin Olun Və Sonra Yenidən Cəhd Edin!")
+                        f"<b>🔵Taşan Gözləmə Xətası</b> \n\{user.first_name}, Faydalı Userbot Çoxlu Qoşulma Sorğularına Görə Qrupunuza Qoşula Bilmədi. Userbot-un Qrupda Qadağan Edilmədiyinə Əmin Olun Və Sonra Yenidən Cəhd Edin!")
     try:
         await USER.get_chat(chid)
     except:
