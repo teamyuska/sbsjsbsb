@@ -30,7 +30,7 @@ async def start(_, message: Message):
                         "⚡Əmrlər" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "⭐Kanal", url=f"https://t.me/newsohbet
+                        "⭐Kanal", url=f"https://t.me/newsohbet"
 "
                     )
                 ]
