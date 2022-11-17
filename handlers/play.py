@@ -101,7 +101,7 @@ async def cls(_, query: CallbackQuery):
                    & ~filters.via_bot)
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Zəhmət olmasa gözləyin...**")
+    lel = await message.reply("🔄**Zəhmət olmasa gözləyin...**")
     
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -109,7 +109,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "UlviMusicAsistant"
+        user.first_name = "SoaAsistant"
     usar = user
     wew = usar.id
     try:
@@ -127,7 +127,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**Salam Asistan bu qrupa musiqi oxumaq üçün qoşuldu**")
+                        message.chat.id, "**Salam Asistan Bu Qrupa Musiqi Oxumaq Üçün Qoşuldu**")
 
                 except UserAlreadyParticipant:
                     pass
@@ -138,7 +138,7 @@ async def play(_, message: Message):
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>Salam {user.first_name}, Asistan Söhbədə Yoxdur🙄, /asistan əlavə etmək üçün əmr.</i>")
+            f"<i>Salam {user.first_name}, Asistan Söhbədə Yoxdur🙄, /asistan Asistanı Əlavə Etmək Üçün Əmr.</i>")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
@@ -147,7 +147,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"❌ Uzun videolar {DURATION_LIMIT} dəqiqəlik icazə verilmir!"
+                f"❌Musiqi Çox Uzundur {DURATION_LIMIT} Dəqiqəlik İcazə Verilir!"
             )
 
         file_name = get_file_name(audio)
@@ -155,13 +155,13 @@ async def play(_, message: Message):
         thumb_name = "https://i.ibb.co/Qkz78hx/images-1.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
-        views = "Yerli olaraq əlavə edildi"
+        views = "Yerli Olaraq Əlavə Edildi"
 
         keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="✨ ʙᴀɢʟᴀ",
+                        text="🗑️Bağla",
                         callback_data="cls")
                    
                 ]
@@ -221,7 +221,7 @@ async def play(_, message: Message):
                     ]
                 )
         if (dur / 60) > DURATION_LIMIT:
-             await lel.edit(f"❌Musiqi Çox Uzundur {DURATION_LIMIT} dəqiqəlik ucazə verilir!")
+             await lel.edit(f"❌Musiqi Çox Uzundur {DURATION_LIMIT} Dəqiqəlik İcazə Verilir!")
              return
         requested_by = message.from_user.first_name
         await generate_cover(requested_by, title, views, duration, thumbnail)     
@@ -272,7 +272,7 @@ async def play(_, message: Message):
     )
         
         if (dur / 60) > DURATION_LIMIT:
-             await lel.edit(f"❌Musiqi Çox Uzundur {DURATION_LIMIT} dəqiqəlik icazə verilir!")
+             await lel.edit(f"❌Musiqi Çox Uzundur {DURATION_LIMIT} Dəqiqəlik İcazə Verilir!")
              return
         requested_by = message.from_user.first_name
         await generate_cover(requested_by, title, views, duration, thumbnail)  
