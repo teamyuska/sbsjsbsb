@@ -14,12 +14,12 @@ async def start(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "➕Məni Qrupa Əlavə Et➕", url=f"https://t.me/Gecemusiqi_bot?startgroup=true"
+                        "➕Məni Qrupa Əlavə Et➕", url=f"https://t.me/soamusicbot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊Asistant", url="https://t.me/GeceMavisiAsistant"
+                        "🔊Asistant", url="https://t.me/SoaAsistant"
                     ),
                     InlineKeyboardButton(
                         "🆘Support", url="https://t.me/YuskaSup"
@@ -94,7 +94,7 @@ async def herkes(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "🇦🇿Sahibim", url="https://t.me/BrendUIvi")
+                         "🇦🇿Sahibim", url="https://t.me/g8zl8adam")
                  ],
                  [
                      InlineKeyboardButton(
@@ -112,11 +112,11 @@ async def admin(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "ᴄʀᴇᴀᴛᴏʀ🇦🇿", url="https://t.me/BrendUIvi")
+                         "🇦🇿Sahibim", url="https://t.me/g8zl8adam")
                  ],
                  [
                      InlineKeyboardButton(
-                         "️🔄 ɢᴇʀɪ", callback_data="cbbilgi")
+                         "️🔙Geri", callback_data="cbbilgi")
                  ] 
              ]
          )
