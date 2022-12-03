@@ -9,7 +9,11 @@ from helpers.filters import command, other_filters2
 async def start(_, message: Message):
                 await message.reply_photo(
                 "https://telegra.ph/file/7016b36478a0b3680a0cc.jpg",
-                caption=(f"""**👋Salam Mən Səsli Söhbətlərdə Musiqi Oxuyan Botam**"""),
+                caption=(f"""**👋SOA MuSiC Sizi Salamlayır👋🏻
+
+ℹ️ Mən səsli söhbətlərdə musiqi oxuya bilən bir botam
+
+✅ Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin**"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
