@@ -13,7 +13,7 @@ async def start(_, message: Message):
 
 ℹ️ Mən səsli söhbətlərdə musiqi oxuya bilən bir botam
 
-✅ Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin**"""),
+✅BOTUN BÜTÜN QAYDALARINI ÖYRƏNMƏK ÜÇÜN BÜTÜN ƏMİRLƏRİMƏ BAS"""),
          reply_markup=InlineKeyboardMarkup(
             [
                 [
