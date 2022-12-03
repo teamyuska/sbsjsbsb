@@ -9,7 +9,7 @@ from helpers.filters import command, other_filters2
 async def start(_, message: Message):
                 await message.reply_photo(
                 "https://telegra.ph/file/7016b36478a0b3680a0cc.jpg",
-                caption=(f"""**👋SOA MuSiC Sizi Salamlayır👋🏻
+                caption=(f"""**👋SOA MUSİC Sizi Salamlayır👋🏻
 
 ℹ️ Mən səsli söhbətlərdə musiqi oxuya bilən bir botam
 
@@ -128,7 +128,11 @@ async def admin(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-    await query.edit_message_text(f"""**👋Salam Mən Səsli Söhbətlərdə Musiqi Oxuyan Botam**""",
+    await query.edit_message_text(f"""**👋SOA MUSİC Sizi Salamlayır👋🏻
+
+ℹ️ Mən səsli söhbətlərdə musiqi oxuya bilən bir botam
+
+✅ Botun istifadə qaydasını öyrənmək üçün /help əmrindən istifadə edin**""",
          reply_markup=InlineKeyboardMarkup(
             [
                 [
